@@ -35,6 +35,18 @@
 		BF74C96423AF9CF700242456 /* todo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = todo.png; sourceTree = "<group>"; };
 		BF74C96623AF9D7900242456 /* progress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress.png; sourceTree = "<group>"; };
 		BF74C96C23AF9F0D00242456 /* priority.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = priority.png; sourceTree = "<group>"; };
+		BF8CA95D245612C60038B988 /* TodoViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodoViewProtocol.h; sourceTree = "<group>"; };
+		BF8CA95E245613500038B988 /* TodoPresenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodoPresenterProtocol.h; sourceTree = "<group>"; };
+		BF8CA962245615460038B988 /* InProgressViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InProgressViewProtocol.h; sourceTree = "<group>"; };
+		BF8CA963245615810038B988 /* InProgressPresenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InProgressPresenterProtocol.h; sourceTree = "<group>"; };
+		BF8CA967245615D60038B988 /* AddTaskViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTaskViewProtocol.h; sourceTree = "<group>"; };
+		BF8CA968245615F10038B988 /* AddTaskPresenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTaskPresenterProtocol.h; sourceTree = "<group>"; };
+		BF8CA96C245616AC0038B988 /* DoneViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoneViewProtocol.h; sourceTree = "<group>"; };
+		BF8CA96D245616C80038B988 /* DonePresenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DonePresenterProtocol.h; sourceTree = "<group>"; };
+		BF8CA971245617040038B988 /* PriorityViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PriorityViewProtocol.h; sourceTree = "<group>"; };
+		BF8CA9732456172C0038B988 /* PriorityPresenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PriorityPresenterProtocol.h; sourceTree = "<group>"; };
+		BF8CA977245617870038B988 /* TaskDetailsViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskDetailsViewProtocol.h; sourceTree = "<group>"; };
+		BF8CA978245617B50038B988 /* TaskDetailsPresenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskDetailsPresenterProtocol.h; sourceTree = "<group>"; };
 		BF8F35E823A4EDD000A7B097 /* low.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = low.png; sourceTree = "<group>"; };
 		BF8F35E923A4EDD000A7B097 /* medium (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medium (2).png"; sourceTree = "<group>"; };
 		BF8F35ED23A4F1A900A7B097 /* TasksDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TasksDetails.h; sourceTree = "<group>"; };
@@ -79,6 +91,168 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		BF8CA95A245610D80038B988 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				BF8CA95E245613500038B988 /* TodoPresenterProtocol.h */,
+				BF8CA95D245612C60038B988 /* TodoViewProtocol.h */,
+				BF8CA95C245611E10038B988 /* Presenter */,
+				BF8CA95B245611CD0038B988 /* View */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		BF8CA95B245611CD0038B988 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF9EC25223A37C150013FC95 /* Todo.h */,
+				BF9EC25323A37C150013FC95 /* Todo.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF8CA95C245611E10038B988 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BF8CA95F245614E70038B988 /* InProgress */ = {
+			isa = PBXGroup;
+			children = (
+				BF8CA963245615810038B988 /* InProgressPresenterProtocol.h */,
+				BF8CA962245615460038B988 /* InProgressViewProtocol.h */,
+				BF8CA9612456151D0038B988 /* Presenter */,
+				BF8CA9602456150E0038B988 /* View */,
+			);
+			path = InProgress;
+			sourceTree = "<group>";
+		};
+		BF8CA9602456150E0038B988 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF9EC25523A37C9A0013FC95 /* InProgress.h */,
+				BF9EC25623A37C9A0013FC95 /* InProgress.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF8CA9612456151D0038B988 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BF8CA964245615930038B988 /* AddTask */ = {
+			isa = PBXGroup;
+			children = (
+				BF8CA968245615F10038B988 /* AddTaskPresenterProtocol.h */,
+				BF8CA967245615D60038B988 /* AddTaskViewProtocol.h */,
+				BF8CA966245615AB0038B988 /* Presenter */,
+				BF8CA9652456159D0038B988 /* View */,
+			);
+			path = AddTask;
+			sourceTree = "<group>";
+		};
+		BF8CA9652456159D0038B988 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF9EC25E23A380A40013FC95 /* AddTask.h */,
+				BF9EC25F23A380A40013FC95 /* AddTask.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF8CA966245615AB0038B988 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BF8CA969245616200038B988 /* Done */ = {
+			isa = PBXGroup;
+			children = (
+				BF8CA96D245616C80038B988 /* DonePresenterProtocol.h */,
+				BF8CA96C245616AC0038B988 /* DoneViewProtocol.h */,
+				BF8CA96B2456163A0038B988 /* Presenter */,
+				BF8CA96A2456162B0038B988 /* View */,
+			);
+			path = Done;
+			sourceTree = "<group>";
+		};
+		BF8CA96A2456162B0038B988 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF9EC25823A37D220013FC95 /* Done.h */,
+				BF9EC25923A37D220013FC95 /* Done.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF8CA96B2456163A0038B988 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BF8CA96E245616D70038B988 /* Priority */ = {
+			isa = PBXGroup;
+			children = (
+				BF8CA9732456172C0038B988 /* PriorityPresenterProtocol.h */,
+				BF8CA971245617040038B988 /* PriorityViewProtocol.h */,
+				BF8CA970245616E80038B988 /* Presenter */,
+				BF8CA96F245616E20038B988 /* View */,
+			);
+			path = Priority;
+			sourceTree = "<group>";
+		};
+		BF8CA96F245616E20038B988 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF9EC25C23A37D690013FC95 /* Priority.m */,
+				BF9EC25B23A37D690013FC95 /* Priority.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF8CA970245616E80038B988 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BF8CA974245617490038B988 /* TaskDetails */ = {
+			isa = PBXGroup;
+			children = (
+				BF8CA9762456175C0038B988 /* Presenter */,
+				BF8CA975245617560038B988 /* View */,
+				BF8CA977245617870038B988 /* TaskDetailsViewProtocol.h */,
+				BF8CA978245617B50038B988 /* TaskDetailsPresenterProtocol.h */,
+			);
+			path = TaskDetails;
+			sourceTree = "<group>";
+		};
+		BF8CA975245617560038B988 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF8F35EE23A4F1A900A7B097 /* TasksDetails.m */,
+				BF8F35ED23A4F1A900A7B097 /* TasksDetails.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF8CA9762456175C0038B988 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		BF9EC22C23A3749B0013FC95 = {
 			isa = PBXGroup;
 			children = (
@@ -98,9 +272,15 @@
 		BF9EC23723A3749B0013FC95 /* TodoProject */ = {
 			isa = PBXGroup;
 			children = (
+				BF9EC23E23A3749B0013FC95 /* Main.storyboard */,
+				BF6EEE0723A3AE66003F4CF6 /* AddProtocol.h */,
+				BF8CA974245617490038B988 /* TaskDetails */,
+				BF8CA96E245616D70038B988 /* Priority */,
+				BF8CA969245616200038B988 /* Done */,
+				BF8CA964245615930038B988 /* AddTask */,
+				BF8CA95F245614E70038B988 /* InProgress */,
+				BF8CA95A245610D80038B988 /* Todo */,
 				BF6EEE0323A3AB0B003F4CF6 /* Model */,
-				BF9EC25123A37B420013FC95 /* Controller */,
-				BF9EC25023A37B180013FC95 /* View */,
 				BF9EC23823A3749B0013FC95 /* AppDelegate.h */,
 				BF9EC23923A3749B0013FC95 /* AppDelegate.m */,
 				BF9EC24123A3749E0013FC95 /* Assets.xcassets */,
@@ -115,34 +295,6 @@
 				BF9EC24723A3749E0013FC95 /* main.m */,
 			);
 			path = TodoProject;
-			sourceTree = "<group>";
-		};
-		BF9EC25023A37B180013FC95 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				BF9EC23E23A3749B0013FC95 /* Main.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		BF9EC25123A37B420013FC95 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				BF9EC25E23A380A40013FC95 /* AddTask.h */,
-				BF9EC25F23A380A40013FC95 /* AddTask.m */,
-				BF9EC25B23A37D690013FC95 /* Priority.h */,
-				BF9EC25C23A37D690013FC95 /* Priority.m */,
-				BF9EC25823A37D220013FC95 /* Done.h */,
-				BF9EC25923A37D220013FC95 /* Done.m */,
-				BF9EC25523A37C9A0013FC95 /* InProgress.h */,
-				BF9EC25623A37C9A0013FC95 /* InProgress.m */,
-				BF9EC25223A37C150013FC95 /* Todo.h */,
-				BF9EC25323A37C150013FC95 /* Todo.m */,
-				BF6EEE0723A3AE66003F4CF6 /* AddProtocol.h */,
-				BF8F35ED23A4F1A900A7B097 /* TasksDetails.h */,
-				BF8F35EE23A4F1A900A7B097 /* TasksDetails.m */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -7,7 +7,7 @@
 //
 
 #import "Done.h"
-#import "../Model/Tasks.h"
+#import "../../Model/Tasks.h"
 @interface Done ()
 {
     // object from model

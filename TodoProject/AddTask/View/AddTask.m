@@ -8,7 +8,7 @@
 
 #import "AddTask.h"
 #import "Todo.h"
-#import "../Model/Tasks.h"
+#import "../../Model/Tasks.h"
 @interface AddTask ()
 {
     NSArray *pickerData;

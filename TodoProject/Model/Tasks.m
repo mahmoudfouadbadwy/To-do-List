@@ -18,10 +18,8 @@
     
 }
 - (id)initWithCoder:(NSCoder *)aDecoder{
-    
     if(self=[super init])
     {
-        
         self.name=[aDecoder decodeObjectForKey:@"name"];
         self.Description=[aDecoder decodeObjectForKey:@"desc"];
         self.priority=[aDecoder decodeObjectForKey:@"pro"];
@@ -30,9 +28,4 @@
     }
     return self;
 }
-
-
-
-
-
 @end

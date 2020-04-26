@@ -7,7 +7,7 @@
 //
 
 #import "Priority.h"
-#import "../Model/Tasks.h"
+#import "../../Model/Tasks.h"
 @interface Priority ()
 {
     Tasks* priority;

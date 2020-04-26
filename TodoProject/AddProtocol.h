@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "../Model/Tasks.h"
+#import "Model/Tasks.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol AddProtocol <NSObject>
