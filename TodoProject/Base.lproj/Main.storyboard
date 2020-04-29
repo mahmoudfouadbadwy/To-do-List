@@ -175,11 +175,19 @@
                                 <rect key="frame" x="133" y="216" width="209" height="100"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="yIa-E1-l7L" id="Yex-ds-g6k"/>
+                                    <outlet property="delegate" destination="yIa-E1-l7L" id="puL-y9-hQj"/>
+                                </connections>
                             </pickerView>
                             <pickerView tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gpq-UU-o7j">
                                 <rect key="frame" x="133" y="361" width="209" height="99"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="yIa-E1-l7L" id="A1j-FF-29Q"/>
+                                    <outlet property="delegate" destination="yIa-E1-l7L" id="9wV-bK-YWg"/>
+                                </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9G-9J-Wba">
                                 <rect key="frame" x="101" y="527" width="152" height="34"/>
@@ -228,7 +236,7 @@
                     <connections>
                         <outlet property="descriptionField" destination="NSt-KN-aRt" id="NY0-Xx-Ph9"/>
                         <outlet property="nameField" destination="jRy-JT-7xz" id="zNE-Es-PKW"/>
-                        <outlet property="picker" destination="05w-mD-fgf" id="ghm-UJ-VXA"/>
+                        <outlet property="priorityPicker" destination="05w-mD-fgf" id="4Br-ml-A2Y"/>
                         <outlet property="statusPicker" destination="Gpq-UU-o7j" id="7qw-tk-PRW"/>
                     </connections>
                 </viewController>

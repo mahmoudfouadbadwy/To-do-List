@@ -12,9 +12,11 @@
 		BF74C96523AF9CF700242456 /* todo.png in Resources */ = {isa = PBXBuildFile; fileRef = BF74C96423AF9CF700242456 /* todo.png */; };
 		BF74C96723AF9D7900242456 /* progress.png in Resources */ = {isa = PBXBuildFile; fileRef = BF74C96623AF9D7900242456 /* progress.png */; };
 		BF74C96D23AF9F0D00242456 /* priority.png in Resources */ = {isa = PBXBuildFile; fileRef = BF74C96C23AF9F0D00242456 /* priority.png */; };
+		BF8CA97D245634F50038B988 /* AddTaskPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8CA97C245634F50038B988 /* AddTaskPresenter.m */; };
 		BF8F35EB23A4EDD000A7B097 /* low.png in Resources */ = {isa = PBXBuildFile; fileRef = BF8F35E823A4EDD000A7B097 /* low.png */; };
 		BF8F35EC23A4EDD000A7B097 /* medium (2).png in Resources */ = {isa = PBXBuildFile; fileRef = BF8F35E923A4EDD000A7B097 /* medium (2).png */; };
 		BF8F35EF23A4F1A900A7B097 /* TasksDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8F35EE23A4F1A900A7B097 /* TasksDetails.m */; };
+		BF989F3E245910C600A7D430 /* AddTask+Views.m in Sources */ = {isa = PBXBuildFile; fileRef = BF989F3D245910C600A7D430 /* AddTask+Views.m */; };
 		BF9EC23A23A3749B0013FC95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9EC23923A3749B0013FC95 /* AppDelegate.m */; };
 		BF9EC24023A3749B0013FC95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9EC23E23A3749B0013FC95 /* Main.storyboard */; };
 		BF9EC24223A3749E0013FC95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF9EC24123A3749E0013FC95 /* Assets.xcassets */; };
@@ -30,7 +32,7 @@
 /* Begin PBXFileReference section */
 		BF6EEE0423A3AB4E003F4CF6 /* Tasks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tasks.h; sourceTree = "<group>"; };
 		BF6EEE0523A3AB4E003F4CF6 /* Tasks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tasks.m; sourceTree = "<group>"; };
-		BF6EEE0723A3AE66003F4CF6 /* AddProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddProtocol.h; sourceTree = "<group>"; };
+		BF6EEE0723A3AE66003F4CF6 /* TaskProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskProtocol.h; sourceTree = "<group>"; };
 		BF74C95C23AF90A400242456 /* high.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = high.png; sourceTree = "<group>"; };
 		BF74C96423AF9CF700242456 /* todo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = todo.png; sourceTree = "<group>"; };
 		BF74C96623AF9D7900242456 /* progress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress.png; sourceTree = "<group>"; };
@@ -47,10 +49,14 @@
 		BF8CA9732456172C0038B988 /* PriorityPresenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PriorityPresenterProtocol.h; sourceTree = "<group>"; };
 		BF8CA977245617870038B988 /* TaskDetailsViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskDetailsViewProtocol.h; sourceTree = "<group>"; };
 		BF8CA978245617B50038B988 /* TaskDetailsPresenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskDetailsPresenterProtocol.h; sourceTree = "<group>"; };
+		BF8CA97B245634F50038B988 /* AddTaskPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTaskPresenter.h; sourceTree = "<group>"; };
+		BF8CA97C245634F50038B988 /* AddTaskPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddTaskPresenter.m; sourceTree = "<group>"; };
 		BF8F35E823A4EDD000A7B097 /* low.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = low.png; sourceTree = "<group>"; };
 		BF8F35E923A4EDD000A7B097 /* medium (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medium (2).png"; sourceTree = "<group>"; };
 		BF8F35ED23A4F1A900A7B097 /* TasksDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TasksDetails.h; sourceTree = "<group>"; };
 		BF8F35EE23A4F1A900A7B097 /* TasksDetails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TasksDetails.m; sourceTree = "<group>"; };
+		BF989F3C245910C600A7D430 /* AddTask+Views.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AddTask+Views.h"; sourceTree = "<group>"; };
+		BF989F3D245910C600A7D430 /* AddTask+Views.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AddTask+Views.m"; sourceTree = "<group>"; };
 		BF9EC23523A3749B0013FC95 /* TodoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF9EC23823A3749B0013FC95 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF9EC23923A3749B0013FC95 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -161,6 +167,8 @@
 			children = (
 				BF9EC25E23A380A40013FC95 /* AddTask.h */,
 				BF9EC25F23A380A40013FC95 /* AddTask.m */,
+				BF989F3C245910C600A7D430 /* AddTask+Views.h */,
+				BF989F3D245910C600A7D430 /* AddTask+Views.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +176,8 @@
 		BF8CA966245615AB0038B988 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				BF8CA97B245634F50038B988 /* AddTaskPresenter.h */,
+				BF8CA97C245634F50038B988 /* AddTaskPresenter.m */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -273,7 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				BF9EC23E23A3749B0013FC95 /* Main.storyboard */,
-				BF6EEE0723A3AE66003F4CF6 /* AddProtocol.h */,
+				BF6EEE0723A3AE66003F4CF6 /* TaskProtocol.h */,
 				BF8CA974245617490038B988 /* TaskDetails */,
 				BF8CA96E245616D70038B988 /* Priority */,
 				BF8CA969245616200038B988 /* Done */,
@@ -378,10 +388,12 @@
 				BF9EC24823A3749E0013FC95 /* main.m in Sources */,
 				BF9EC23A23A3749B0013FC95 /* AppDelegate.m in Sources */,
 				BF8F35EF23A4F1A900A7B097 /* TasksDetails.m in Sources */,
+				BF8CA97D245634F50038B988 /* AddTaskPresenter.m in Sources */,
 				BF9EC25423A37C150013FC95 /* Todo.m in Sources */,
 				BF9EC25723A37C9A0013FC95 /* InProgress.m in Sources */,
 				BF9EC25A23A37D220013FC95 /* Done.m in Sources */,
 				BF9EC26023A380A40013FC95 /* AddTask.m in Sources */,
+				BF989F3E245910C600A7D430 /* AddTask+Views.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

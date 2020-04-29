@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AddProtocol.h"
+#import "../../TaskProtocol.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Todo : UIViewController <AddProtocol,UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate,UISearchBarDelegate>
+@interface Todo : UIViewController <TaskProtocol,UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate,UISearchBarDelegate>
 @property NSUserDefaults* taskDef;
 @property (weak, nonatomic) IBOutlet UITableView *tasksTableView;
 

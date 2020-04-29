@@ -7,13 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AddProtocol.h"
+#import "../AddTaskViewProtocol.h"
+#import "../AddTaskPresenterProtocol.h"
+#import "../../Todo/View/Todo.h"
 NS_ASSUME_NONNULL_BEGIN
-
-@interface AddTask : UIViewController <UIPickerViewDelegate,UIPickerViewDataSource,UIAlertViewDelegate>
+//UIPickerViewDelegate,UIPickerViewDataSource,
+@interface AddTask : UIViewController <AddTaskViewProtocol,UIAlertViewDelegate>
+{
+    NSArray *pickerPriority;
+    NSMutableArray *pickerStatus;
+}
+// outlets
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UITextField *descriptionField;
-@property (weak, nonatomic) IBOutlet UIPickerView *picker;
+@property (weak, nonatomic) IBOutlet UIPickerView *priorityPicker;
 @property (weak, nonatomic) IBOutlet UIPickerView *statusPicker;
 
 @property NSString* nameEdit;
@@ -22,7 +29,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSString* statusEdit;
 @property int flag;
 
-@property id<AddProtocol>addpro;
+@property id<AddTaskPresenterProtocol>presenter;
+@property Todo* todoView; // for delegation
 @end
 
 NS_ASSUME_NONNULL_END

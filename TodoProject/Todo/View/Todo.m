@@ -9,11 +9,7 @@
 #import "Todo.h"
 #import "AddTask.h"
 #import "TasksDetails.h"
-
-@interface Todo ()
-
-@end
-
+#import "../../AddTask/Presenter/AddTaskPresenter.h"
 @implementation Todo
 {
     // objetcs from views
@@ -29,20 +25,27 @@
     NSMutableArray *filter;
     BOOL isFiltered;
     NSInteger deleteFlag;
+  
 }
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+   
+    // views
     addView=[self.storyboard instantiateViewControllerWithIdentifier:@"Add"];
+    addView.todoView = self; // for protocol.
     detail=[self.storyboard instantiateViewControllerWithIdentifier:@"detail"];
-    [addView setAddpro:self];
+    
+    
+    // userDefault
     _taskDef=[NSUserDefaults standardUserDefaults];
     _taskArr=[NSMutableArray new ];
     [_tasksTableView setDelegate:self];
     [_tasksTableView setDataSource:self];
     
+   
+    // search
     isFiltered=false;
     [_searchbar setDelegate:self];
     
@@ -61,7 +64,7 @@
 }
 
 -(void)addTask:(Tasks *)task{
-    
+   
     // mutable array is empty
     // decode objetcs from userdefaults
     if([_taskArr count]==0)

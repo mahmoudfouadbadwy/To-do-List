@@ -10,7 +10,7 @@
 #import "Model/Tasks.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol AddProtocol <NSObject>
+@protocol TaskProtocol <NSObject>
 -(void)addTask:(Tasks*)task;
 -(void)editTask:(Tasks*)task;
 @end
