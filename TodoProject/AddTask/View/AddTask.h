@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "../AddTaskViewProtocol.h"
 #import "../AddTaskPresenterProtocol.h"
-#import "../../Todo/View/Todo.h"
+#import "Todo.h"
 NS_ASSUME_NONNULL_BEGIN
 //UIPickerViewDelegate,UIPickerViewDataSource,
 @interface AddTask : UIViewController <AddTaskViewProtocol,UIAlertViewDelegate>
@@ -30,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property int flag;
 
 @property id<AddTaskPresenterProtocol>presenter;
-@property Todo* todoView; // for delegation
+@property Todo * todoView;// for delegation
 @end
 
 NS_ASSUME_NONNULL_END

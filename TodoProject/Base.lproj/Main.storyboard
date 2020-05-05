@@ -133,7 +133,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="BGx-Eq-jNV">
                             <color key="tintColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <action selector="AddTask:" destination="0Km-4Y-C2y" id="4lJ-ZG-JlO"/>
+                                <action selector="addTaskAction:" destination="0Km-4Y-C2y" id="Uxf-FB-f2O"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

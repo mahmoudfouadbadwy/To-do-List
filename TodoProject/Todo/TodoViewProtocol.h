@@ -11,9 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol TodoViewProtocol <NSObject>
-
-
-
+-(void)goToDetailView;
+-(void)goToAddView;
 @end
 
 NS_ASSUME_NONNULL_END

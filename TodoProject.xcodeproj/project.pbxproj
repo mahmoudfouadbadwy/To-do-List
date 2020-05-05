@@ -12,6 +12,8 @@
 		BF74C96523AF9CF700242456 /* todo.png in Resources */ = {isa = PBXBuildFile; fileRef = BF74C96423AF9CF700242456 /* todo.png */; };
 		BF74C96723AF9D7900242456 /* progress.png in Resources */ = {isa = PBXBuildFile; fileRef = BF74C96623AF9D7900242456 /* progress.png */; };
 		BF74C96D23AF9F0D00242456 /* priority.png in Resources */ = {isa = PBXBuildFile; fileRef = BF74C96C23AF9F0D00242456 /* priority.png */; };
+		BF7D1195245DE8AA0063F912 /* UserDefaultsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7D1194245DE8AA0063F912 /* UserDefaultsStore.m */; };
+		BF7D1198245DFBBB0063F912 /* TodoPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7D1197245DFBBB0063F912 /* TodoPresenter.m */; };
 		BF8CA97D245634F50038B988 /* AddTaskPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8CA97C245634F50038B988 /* AddTaskPresenter.m */; };
 		BF8F35EB23A4EDD000A7B097 /* low.png in Resources */ = {isa = PBXBuildFile; fileRef = BF8F35E823A4EDD000A7B097 /* low.png */; };
 		BF8F35EC23A4EDD000A7B097 /* medium (2).png in Resources */ = {isa = PBXBuildFile; fileRef = BF8F35E923A4EDD000A7B097 /* medium (2).png */; };
@@ -37,6 +39,10 @@
 		BF74C96423AF9CF700242456 /* todo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = todo.png; sourceTree = "<group>"; };
 		BF74C96623AF9D7900242456 /* progress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress.png; sourceTree = "<group>"; };
 		BF74C96C23AF9F0D00242456 /* priority.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = priority.png; sourceTree = "<group>"; };
+		BF7D1193245DE8AA0063F912 /* UserDefaultsStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDefaultsStore.h; sourceTree = "<group>"; };
+		BF7D1194245DE8AA0063F912 /* UserDefaultsStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDefaultsStore.m; sourceTree = "<group>"; };
+		BF7D1196245DFBBB0063F912 /* TodoPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodoPresenter.h; sourceTree = "<group>"; };
+		BF7D1197245DFBBB0063F912 /* TodoPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodoPresenter.m; sourceTree = "<group>"; };
 		BF8CA95D245612C60038B988 /* TodoViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodoViewProtocol.h; sourceTree = "<group>"; };
 		BF8CA95E245613500038B988 /* TodoPresenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodoPresenterProtocol.h; sourceTree = "<group>"; };
 		BF8CA962245615460038B988 /* InProgressViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InProgressViewProtocol.h; sourceTree = "<group>"; };
@@ -93,6 +99,8 @@
 			children = (
 				BF6EEE0423A3AB4E003F4CF6 /* Tasks.h */,
 				BF6EEE0523A3AB4E003F4CF6 /* Tasks.m */,
+				BF7D1193245DE8AA0063F912 /* UserDefaultsStore.h */,
+				BF7D1194245DE8AA0063F912 /* UserDefaultsStore.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -120,6 +128,8 @@
 		BF8CA95C245611E10038B988 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				BF7D1196245DFBBB0063F912 /* TodoPresenter.h */,
+				BF7D1197245DFBBB0063F912 /* TodoPresenter.m */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -389,10 +399,12 @@
 				BF9EC23A23A3749B0013FC95 /* AppDelegate.m in Sources */,
 				BF8F35EF23A4F1A900A7B097 /* TasksDetails.m in Sources */,
 				BF8CA97D245634F50038B988 /* AddTaskPresenter.m in Sources */,
+				BF7D1198245DFBBB0063F912 /* TodoPresenter.m in Sources */,
 				BF9EC25423A37C150013FC95 /* Todo.m in Sources */,
 				BF9EC25723A37C9A0013FC95 /* InProgress.m in Sources */,
 				BF9EC25A23A37D220013FC95 /* Done.m in Sources */,
 				BF9EC26023A380A40013FC95 /* AddTask.m in Sources */,
+				BF7D1195245DE8AA0063F912 /* UserDefaultsStore.m in Sources */,
 				BF989F3E245910C600A7D430 /* AddTask+Views.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,8 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate ()
+@interface AppDelegate (
+                        )
 
 @end
 
@@ -16,7 +17,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // stroyboard
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    // detailview
+    _detailView = [storyboard instantiateViewControllerWithIdentifier:@"detail"];
+    //
+    _addView=[storyboard instantiateViewControllerWithIdentifier:@"Add"];
     return YES;
 }
 

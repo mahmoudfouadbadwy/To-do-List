@@ -7,11 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "../Model/Tasks.h"
+#import "../AppDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol TodoPresenterProtocol <NSObject>
-
+@property  TasksDetails *detail;
+@property  Todo* todoView;
+@property  AddTask* addView;
+-(void)addTaskToUsersDefaults:(NSMutableArray*) arr;
+-(NSInteger)getTsksCount;
+-(NSMutableArray*)getTasks;
+-(void)clearUserDefaults;
+-(void)showTaskDetails:(NSInteger) index;
+-(void)addTask;
+-(void)editTask:(NSInteger) index;
 @end
 
 NS_ASSUME_NONNULL_END
