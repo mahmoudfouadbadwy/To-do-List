@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(NSInteger)getTasksNumber;
 -(NSMutableArray*)getTasks;
 -(void)clearUserDefaults;
+
 @end
 
 NS_ASSUME_NONNULL_END

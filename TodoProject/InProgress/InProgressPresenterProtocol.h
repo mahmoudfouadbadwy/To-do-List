@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol InProgressPresenterProtocol <NSObject>
-
+-(NSMutableArray*)getInprogressTasks;
+-(NSString*)getTaskImage:(NSInteger )index;
 @end
 
 NS_ASSUME_NONNULL_END

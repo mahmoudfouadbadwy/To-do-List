@@ -38,7 +38,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="InProgress" image="progress.png" id="w27-k6-trg"/>
                     <connections>
-                        <outlet property="inProgTasks" destination="dtm-pg-I7L" id="HpH-QG-AFn"/>
+                        <outlet property="inProgressTable" destination="dtm-pg-I7L" id="eZK-8J-E4c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgl-tc-dW1" userLabel="First Responder" sceneMemberID="firstResponder"/>

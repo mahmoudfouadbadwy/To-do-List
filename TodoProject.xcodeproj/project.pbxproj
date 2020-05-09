@@ -15,6 +15,7 @@
 		BF7D1195245DE8AA0063F912 /* UserDefaultsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7D1194245DE8AA0063F912 /* UserDefaultsStore.m */; };
 		BF7D1198245DFBBB0063F912 /* TodoPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7D1197245DFBBB0063F912 /* TodoPresenter.m */; };
 		BF8CA97D245634F50038B988 /* AddTaskPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8CA97C245634F50038B988 /* AddTaskPresenter.m */; };
+		BF8F30F32466A379009E4B1E /* InProgressPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8F30F22466A379009E4B1E /* InProgressPresenter.m */; };
 		BF8F35EB23A4EDD000A7B097 /* low.png in Resources */ = {isa = PBXBuildFile; fileRef = BF8F35E823A4EDD000A7B097 /* low.png */; };
 		BF8F35EC23A4EDD000A7B097 /* medium (2).png in Resources */ = {isa = PBXBuildFile; fileRef = BF8F35E923A4EDD000A7B097 /* medium (2).png */; };
 		BF8F35EF23A4F1A900A7B097 /* TasksDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8F35EE23A4F1A900A7B097 /* TasksDetails.m */; };
@@ -57,6 +58,8 @@
 		BF8CA978245617B50038B988 /* TaskDetailsPresenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskDetailsPresenterProtocol.h; sourceTree = "<group>"; };
 		BF8CA97B245634F50038B988 /* AddTaskPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTaskPresenter.h; sourceTree = "<group>"; };
 		BF8CA97C245634F50038B988 /* AddTaskPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddTaskPresenter.m; sourceTree = "<group>"; };
+		BF8F30F12466A379009E4B1E /* InProgressPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InProgressPresenter.h; sourceTree = "<group>"; };
+		BF8F30F22466A379009E4B1E /* InProgressPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InProgressPresenter.m; sourceTree = "<group>"; };
 		BF8F35E823A4EDD000A7B097 /* low.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = low.png; sourceTree = "<group>"; };
 		BF8F35E923A4EDD000A7B097 /* medium (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medium (2).png"; sourceTree = "<group>"; };
 		BF8F35ED23A4F1A900A7B097 /* TasksDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TasksDetails.h; sourceTree = "<group>"; };
@@ -97,8 +100,8 @@
 		BF6EEE0323A3AB0B003F4CF6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BF6EEE0423A3AB4E003F4CF6 /* Tasks.h */,
 				BF6EEE0523A3AB4E003F4CF6 /* Tasks.m */,
+				BF6EEE0423A3AB4E003F4CF6 /* Tasks.h */,
 				BF7D1193245DE8AA0063F912 /* UserDefaultsStore.h */,
 				BF7D1194245DE8AA0063F912 /* UserDefaultsStore.m */,
 			);
@@ -157,6 +160,8 @@
 		BF8CA9612456151D0038B988 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				BF8F30F12466A379009E4B1E /* InProgressPresenter.h */,
+				BF8F30F22466A379009E4B1E /* InProgressPresenter.m */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -403,6 +408,7 @@
 				BF9EC25423A37C150013FC95 /* Todo.m in Sources */,
 				BF9EC25723A37C9A0013FC95 /* InProgress.m in Sources */,
 				BF9EC25A23A37D220013FC95 /* Done.m in Sources */,
+				BF8F30F32466A379009E4B1E /* InProgressPresenter.m in Sources */,
 				BF9EC26023A380A40013FC95 /* AddTask.m in Sources */,
 				BF7D1195245DE8AA0063F912 /* UserDefaultsStore.m in Sources */,
 				BF989F3E245910C600A7D430 /* AddTask+Views.m in Sources */,

@@ -7,77 +7,48 @@
 //
 
 #import "InProgress.h"
-#import "Todo.h"
+#import "../Presenter/InProgressPresenter.h"
 
 @interface InProgress ()
 {
-    // object from model
-    Tasks *progress;
-    //declaratios
-    NSData *obj;
-    NSData *encode;
-    NSMutableArray *arrobj;
-    NSUserDefaults *progDef;
-    NSMutableArray *progArray;
+    NSMutableArray *inProgressArray;
 }
 @end
 
 @implementation InProgress
 
+//MARK: - View Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    [_inProgTasks setDelegate:self ];
-    [_inProgTasks setDataSource:self];
-    progDef=[NSUserDefaults standardUserDefaults];
+    _presenter = [InProgressPresenter new];
+    [_inProgressTable setDelegate:self ];
+    [_inProgressTable setDataSource:self];
+   
 }
 -(void)viewWillAppear:(BOOL)animated
 {
-    obj=[progDef objectForKey:@"task"];
-    arrobj=[NSKeyedUnarchiver unarchiveObjectWithData:obj];
-    progArray=[NSMutableArray new];
-    for(int i=0;i<[arrobj count];i++)
-    {
-        progress=[arrobj objectAtIndex:i];
-        if([progress.status isEqualToString:@"InProgress"])
-            [progArray addObject:progress];
-    }
-   [_inProgTasks reloadData];
+    inProgressArray = [_presenter getInprogressTasks];
+   [_inProgressTable reloadData];
 }
 
 
-
+//MARK: - Table View
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [progArray count];
+    return [inProgressArray count];
 }
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
         UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"inprogcell"];
-        progress=[progArray objectAtIndex:indexPath.row];
-        cell.textLabel.text=[progress name];
-     //   cell.accessoryType=UITableViewCellAccessoryDetailButton;
-        // image view
-        if([[progress priority]isEqualToString:@"Low"])
-        {
-            cell.imageView.image=[UIImage imageNamed:@"low.png"];
-        }
-        else if([[progress priority]isEqualToString:@"Medium"])
-        {
-            cell.imageView.image=[UIImage imageNamed:@"medium (2).png"];
-        }
-        else
-        {
-            cell.imageView.image=[UIImage imageNamed:@"high.png"];
-        }
+        cell.textLabel.text=[[inProgressArray objectAtIndex:indexPath.row] name];
+        cell.imageView.image = [UIImage imageNamed:[_presenter getTaskImage:indexPath.row]];
     return cell;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    return @"In Progress Tasks List";
+    return @"InProgress Tasks";
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
