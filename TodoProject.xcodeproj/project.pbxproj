@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF04ADFF246DD885002082CC /* donePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BF04ADFE246DD885002082CC /* donePresenter.m */; };
 		BF6EEE0623A3AB4E003F4CF6 /* Tasks.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6EEE0523A3AB4E003F4CF6 /* Tasks.m */; };
 		BF74C95D23AF90A400242456 /* high.png in Resources */ = {isa = PBXBuildFile; fileRef = BF74C95C23AF90A400242456 /* high.png */; };
 		BF74C96523AF9CF700242456 /* todo.png in Resources */ = {isa = PBXBuildFile; fileRef = BF74C96423AF9CF700242456 /* todo.png */; };
@@ -33,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF04ADFD246DD885002082CC /* donePresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = donePresenter.h; sourceTree = "<group>"; };
+		BF04ADFE246DD885002082CC /* donePresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = donePresenter.m; sourceTree = "<group>"; };
 		BF6EEE0423A3AB4E003F4CF6 /* Tasks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tasks.h; sourceTree = "<group>"; };
 		BF6EEE0523A3AB4E003F4CF6 /* Tasks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tasks.m; sourceTree = "<group>"; };
 		BF6EEE0723A3AE66003F4CF6 /* TaskProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskProtocol.h; sourceTree = "<group>"; };
@@ -220,6 +223,8 @@
 		BF8CA96B2456163A0038B988 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				BF04ADFD246DD885002082CC /* donePresenter.h */,
+				BF04ADFE246DD885002082CC /* donePresenter.m */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -401,6 +406,7 @@
 				BF6EEE0623A3AB4E003F4CF6 /* Tasks.m in Sources */,
 				BF9EC25D23A37D690013FC95 /* Priority.m in Sources */,
 				BF9EC24823A3749E0013FC95 /* main.m in Sources */,
+				BF04ADFF246DD885002082CC /* donePresenter.m in Sources */,
 				BF9EC23A23A3749B0013FC95 /* AppDelegate.m in Sources */,
 				BF8F35EF23A4F1A900A7B097 /* TasksDetails.m in Sources */,
 				BF8CA97D245634F50038B988 /* AddTaskPresenter.m in Sources */,

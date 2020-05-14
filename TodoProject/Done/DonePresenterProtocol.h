@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol DonePresenterProtocol <NSObject>
-
+-(NSMutableArray*)getDoneTasks;
+-(NSString*)getTaskImage:(NSInteger )index;
 @end
 
 NS_ASSUME_NONNULL_END
